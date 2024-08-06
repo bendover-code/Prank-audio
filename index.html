@@ -6,8 +6,15 @@
     <title>Confirm Address</title>
 </head>
 <body>
-    <audio autoplay>
+    <audio id="audio" muted>
         <source src="https://tuna.voicemod.net/sound/a99ad7b0-f484-4576-b37e-308532a91bf2" type="audio/mpeg">
     </audio>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('audio');
+            audio.muted = false;
+            audio.play();
+        });
+    </script>
 </body>
 </html>
